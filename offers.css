@@ -1,0 +1,45 @@
+/* Seasonal offers + Rate-us card (glass / gold theme) */
+.offers{padding:18px 16px 4px;max-width:1200px;margin:0 auto}
+.offers[hidden]{display:none}
+.offers-head{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:12px}
+.offers-eyebrow{margin:0;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.offers-title{margin:2px 0 0;font-family:'Fraunces',serif;font-weight:500;font-size:26px;color:var(--champagne)}
+.offers-arrows{display:flex;gap:8px}
+.offers-arrows button{width:44px;height:44px;border-radius:50%;border:1px solid var(--glass-border-bright);background:var(--glass-2);color:var(--paper);font-size:24px;cursor:pointer}
+.offers-arrows button:disabled{opacity:.35}
+.offers-arrows button[hidden]{display:none}
+.offers-track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 14px;scrollbar-width:none}
+.offers-track::-webkit-scrollbar{display:none}
+.offer-card{flex:0 0 min(320px,82%);scroll-snap-align:start;border-radius:18px;border:1px solid var(--glass-border-bright);background:linear-gradient(160deg,var(--glass-3),var(--glass));backdrop-filter:var(--glass-blur-soft);-webkit-backdrop-filter:var(--glass-blur-soft);position:relative;overflow:hidden}
+.offer-inner{padding:18px;display:flex;flex-direction:column;gap:10px;height:100%;position:relative}
+.offer-spark{position:absolute;right:10px;top:36px;width:64px;height:64px;color:var(--gold);opacity:.25}
+.offer-top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.offer-badge{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#1a1305;background:linear-gradient(135deg,var(--gold-bright),var(--gold));padding:4px 10px;border-radius:999px}
+.offer-pct{font-size:12px;font-weight:700;color:var(--gold-bright)}
+.offer-title{margin:0;font-family:'Fraunces',serif;font-weight:500;font-size:21px;color:var(--champagne)}
+.offer-desc{margin:0;font-size:14px;line-height:1.45;color:var(--muted);flex:1}
+.offer-price-row{display:flex;align-items:baseline;gap:10px}
+.offer-price{font-size:24px;font-weight:800;color:var(--champagne)}
+.offer-price--text{font-size:16px;color:var(--gold-bright)}
+.offer-was{text-decoration:line-through;color:var(--muted);font-size:15px}
+.offer-foot{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:4px}
+.offer-valid{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px}
+.offer-valid i{width:7px;height:7px;border-radius:50%;background:var(--muted)}
+.offer-valid.is-soon{color:var(--danger)}.offer-valid.is-soon i{background:var(--danger)}
+.offer-claim{min-height:44px;padding:0 18px;border-radius:999px;border:0;font-weight:700;font-size:14px;cursor:pointer;color:#1a1305;background:linear-gradient(135deg,var(--gold-bright),var(--gold))}
+.offer-claim.is-added{filter:brightness(.85)}
+.offer-skel{min-height:190px;animation:offerPulse 1.2s ease-in-out infinite}
+@keyframes offerPulse{50%{opacity:.5}}
+.review-mount:empty{display:none}
+.review-mount{padding:16px;max-width:1200px;margin:8px auto}
+.review-card{display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between;padding:22px;border-radius:20px;border:1px solid var(--glass-border-bright);background:linear-gradient(160deg,var(--glass-3),var(--glass));backdrop-filter:var(--glass-blur-soft);-webkit-backdrop-filter:var(--glass-blur-soft)}
+.review-copy{flex:1 1 240px}
+.review-eyebrow{margin:0;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.review-title{margin:4px 0 8px;font-family:'Fraunces',serif;font-weight:500;font-size:24px;color:var(--champagne)}
+.review-stars{display:flex;gap:4px;margin-bottom:10px}
+.review-stars svg{width:22px;height:22px;fill:var(--gold)}
+.review-text{margin:0 0 14px;color:var(--muted);font-size:14px;line-height:1.5}
+.review-btn{display:inline-flex;align-items:center;min-height:44px;padding:0 20px;border-radius:999px;font-weight:700;text-decoration:none;color:#1a1305;background:linear-gradient(135deg,var(--gold-bright),var(--gold))}
+.review-qr{display:flex;flex-direction:column;align-items:center;gap:6px;font-size:12px;color:var(--muted)}
+.review-qr img{width:164px;height:164px;border-radius:12px;background:#fff;padding:6px}
+
